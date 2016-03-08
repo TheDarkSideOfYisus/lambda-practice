@@ -14,5 +14,10 @@ namespace lamda_practice.Data
 
         [Required]
         public string Name { get; set; }
+
+        public static implicit operator City(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
